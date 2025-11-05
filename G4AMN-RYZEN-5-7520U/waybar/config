@@ -1,0 +1,68 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": [ "cpu",  "memory",  "network", "pulseaudio", "battery","custom/kbd" ],
+
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M:%S}"
+    },
+"custom/kbd": {
+  "exec": "~/.config/waybar/scripts/kbd.sh",
+  "interval": 1,
+  "return-type": "json",
+  "format": "{}"
+  },
+
+   "keyboard-state": {
+      "numlock": false,
+      "capslock": false,
+      "format": "{layout}",
+      "layout-map": {
+          "us": "EN",
+          "ge": "KA"
+      }
+    },
+    
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 2
+    },
+
+    "memory": {
+        "format": " {used}/{total}MB",
+        "interval": 2
+    },
+
+
+    "temperature": {
+        "thermal-zone": 0,
+        "format": " {temperature}°C",
+        "interval": 2
+    },
+
+    "network": {
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-ethernet": " {ipaddr}",
+        "format-disabled": "✈ ",
+        "format-disconnected": " Disconnected",
+        "tooltip": true
+    },
+
+    "pulseaudio": {
+        "format": " {volume}%",
+        "format-muted": " Muted",
+        "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 30
+    },
+    "custom/confirm_shutdown": {
+      "exec": "~/.config/waybar/scripts/confirm_shutdown.sh",
+      "interval": 0
+    } 
+}

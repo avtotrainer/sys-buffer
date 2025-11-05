@@ -1,0 +1,70 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+#waybar {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  border-bottom: 2px solid #44475a;
+  padding: 5px;
+}
+
+#clock {
+  color: #f1fa8c;
+}
+
+#network {
+  color: #8be9fd;
+}
+
+#pulseaudio {
+  color: #50fa7b;
+}
+
+#battery {
+  color: #ffb86c;
+  padding-right: 2px;
+}
+
+#cpu {
+  color: #ff5555;
+}
+
+#memory {
+  color: #bd93f9;
+}
+
+#temperature {
+  color: #ff79c6;
+}
+
+#keyboard-state {
+  color: #ffffff;
+  background: #44475a;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#custom-kbd {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #444;
+  color: white;
+}
+
+#custom-kbd.lang-en {
+  background-color: #3b82f6; /* ლურჯი */
+  color: #fff;
+}
+
+#custom-kbd.lang-ka {
+  background-color: #f97316; /* ნარინჯისფერი */
+  color: #fff;
+}
+
+#custom-kbd.lang-unknown {
+  background-color: #888;
+  color: #fff;
+}
